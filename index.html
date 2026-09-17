@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Tragos | XV Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #1f1c2c, #928dab);
+      --card-bg: rgba(255, 255, 255, 0.1);
+      --card-border: rgba(255, 255, 255, 0.2);
+      --text-color: #ffffff;
+      --accent-color: #ff758c;
+      --tag-bg: rgba(255, 117, 140, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      color: var(--text-color);
+      min-height: 100vh;
+      padding: 20px 15px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+      margin-top: 10px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      background: linear-gradient(45deg, #ff758c, #ff7eb3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      font-weight: 300;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .card:active {
+      transform: scale(0.98);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .card-badge {
+      font-size: 0.75rem;
+      background: var(--tag-bg);
+      color: #ffb3c1;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 117, 140, 0.4);
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      opacity: 0.9;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mocktail Bar 🍹</h1>
+    <p>Bebidas sin alcohol, frías & refrescantes</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Trago 1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Sunset Passion Spritz</div>
+        <span class="card-badge">Fruity</span>
+      </div>
+      <div class="card-desc">Jugo de maracuyá, gaseosa lima-limón y un toque de granadina al fondo.</div>
+    </div>
+
+    <!-- Trago 2 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Watermelon Mint Cooler</div>
+        <span class="card-badge">Fresh</span>
+      </div>
+      <div class="card-desc">Jugo natural de sandía, jugo de lima, menta fresca y soda/ginger ale.</div>
+    </div>
+
+    <!-- Trago 3 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Electric Blue Coconut</div>
+        <span class="card-badge">Trendy</span>
+      </div>
+      <div class="card-desc">Limonada artesanal, agua de coco y jarabe Blue Curaçao sin alcohol.</div>
+    </div>
+
+    <!-- Trago 4 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Berry-Hibiscus Punch</div>
+        <span class="card-badge">Ice Cold</span>
+      </div>
+      <div class="card-desc">Té de hibiscus, jugo de manzana, ginger ale y frutos rojos congelados.</div>
+    </div>
+
+    <!-- Trago 5 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Piña Colada Float</div>
+        <span class="card-badge">Sweet</span>
+      </div>
+      <div class="card-desc">Cremoso licuado de piña y leche de coco con una bocha de helado de vainilla.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>¡A disfrutar la fiesta! ✨</p>
+  </footer>
+
+</body>
+</html>
